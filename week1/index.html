@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- Webpage Title -->
+        <title>Skyuniverse Edu-Consulting</title>
+
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+            * {
+                font-family: 'Noto Serif KR', serif;
+            }
+
+            .wrap {
+                width: 500px;
+                margin: 30px auto;
+            }
+
+            .img {
+                background-image: url('https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+                background-size: cover;
+                background-position: center;
+                width: 500px;
+                height: 300px;
+            }
+
+            .info {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            h1, h5 {
+                display: inline;
+            }
+
+            .order {
+                text-align: center;
+            }
+
+            .orders {
+                margin-top: 100px;
+            }
+        </style>
+
+        <script>
+            function sayHello() {
+                alert('신청이 완료되었습니다.');
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <center>
+                <img src="https://static.wixstatic.com/media/68824e_14cd78c09a8e441f8237eff335f4a495~mv2.png/v1/fill/w_186,h_39,al_c,q_85,usm_0.66_1.00_0.01/%EC%8A%A4%EC%B9%B4%EC%9D%B4%EC%9C%A0%EB%8B%88%EB%B2%84%EC%8A%A4%20%EB%A1%9C%EA%B3%A0-%EA%B0%80%EB%A1%9C%EC%A1%B0%ED%95%A9.webp"
+                     alt="">
+            </center>
+            <hr>
+            <div class="img"></div>
+            <div class="info">
+                <hr>
+                <h1>입시전략컨설팅</h1>
+                <p><h5>- 컨설팅 비용: 150,000원(1.0hr) / 200,000원(1.5hr)</h5></p>
+                <hr>
+                <p>구체적인 근거를 토대로 상위권 대학에 대한 목표의식을 확고히 합니다. 대입전형별 특징을 분석해 합격가능성이 가장 높은 전형을 추천하고, 해당 전형을 효과적으로 준비할 수 있는 전략과
+                    방법을 엄선된
+                    합격자의 사례를 통해 제시합니다.</p>
+                <hr>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">상담자 이름</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-name">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text">컨설팅 종류</label>
+                    </div>
+                    <select class="custom-select" id="order-count">
+                        <option selected value=""> -- 종류를 선택하세요 --</option>
+                        <option value="1">입시전략컨설팅(1.0hr)</option>
+                        <option value="2">수시지원컨설팅(1.5hr)</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">상담자 주소</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-address">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">상담자 번호</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-phone">
+                </div>
+                <div class="order">
+                    <button onclick="sayHello()" type="button" class="btn btn-primary">신청하기</button>
+                </div>
+            </div>
+            <div class="orders">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">이름</th>
+                        <th scope="col">종류</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">전화번호</th>
+                    </tr>
+                    </thead>
+                    <tbody id="orders-box">
+                    <tr>
+                        <td>박르탄</td>
+                        <td>10000</td>
+                        <td>르탄시 코딩구 열심동</td>
+                        <td>010-1234-5678</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
